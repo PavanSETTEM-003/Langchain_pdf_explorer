@@ -11,7 +11,7 @@ from langchain.chains.question_answering import load_qa_chain
 from langchain.callbacks import get_openai_callback
 import os
  
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "give yout api key"
 
 # Sidebar contents
 with st.sidebar:
