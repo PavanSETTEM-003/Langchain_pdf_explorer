@@ -25,7 +25,7 @@
 
   <li>Clone this repository and navigate to the cloned repository:</li>
 
-  <pre><code>git clone https://github.com/PavanSETTEM-003/Langchanin-PDF-Explorer.git</code></pre>
+  <pre><code>git clone https://github.com/PavanSETTEM-003/Langchain_pdf_explorer.git</code></pre>
 
   <pre><code>cd Langchanin-PDF-Explorer</code></pre>
 
@@ -50,7 +50,48 @@
 
 <p>All the dependencies are listed in the <code>requirements.txt</code> file and will be installed during the setup process.</p>
 
+<hr>
+<div>
+  <h2>Code Explanation</h2>
 
+<p>1. Libraries:</p>
+<ul>
+  <li><code>streamlit</code>: A Python library used for creating interactive web applications.</li>
+  <li><code>PyPDF2</code>: A Python library for working with PDF files.</li>
+  <li><code>tempfile</code>: A Python library for creating and managing temporary files.</li>
+  <li><code>langchain</code>: A custom library that offers text processing tools and functionalities.</li>
+  <li><code>HuggingFaceHub</code>: A library for working with pre-trained models from the Hugging Face model hub.</li>
+  <li><code>FAISS</code>: A library for efficient similarity search and retrieval of vectors.</li>
+</ul>
+
+<p>2. Document Processing:</p>
+<ul>
+  <li>The code utilizes <code>PyPDF2</code> to read and extract content from uploaded PDF files.</li>
+  <li>The extracted document is divided into smaller text chunks using the <code>CharacterTextSplitter</code> from <code>langchain</code>, enabling efficient processing and retrieval.</li>
+</ul>
+
+<p>3. Vector Store Creation:</p>
+<ul>
+  <li>The <code>HuggingFaceEmbeddings</code> class from <code>langchain</code> converts the text chunks into numerical embeddings that capture the semantic representation of the text.</li>
+  <li>The vector store is created using <code>FAISS</code>, allowing for efficient indexing and similarity-based search of document vectors.</li>
+</ul>
+
+<p>4. Question Answering:</p>
+<ul>
+  <li>The code initializes a question answering model from the Hugging Face model hub using <code>HuggingFaceHub</code>.</li>
+  <li>The <code>load_qa_chain</code> function from <code>langchain</code> is used to create a question answering chain, incorporating the question answering model and additional processing steps.</li>
+</ul>
+
+<p>5. User Interaction:</p>
+<ul>
+  <li><code>streamlit</code> is used to create an interactive user interface for uploading PDF files and inputting questions.</li>
+  <li>Upon receiving a user's question, the code performs a similarity search in the vector store to identify the most relevant document chunks.</li>
+  <li>The question answering chain is then executed on the selected document chunks to generate a response.</li>
+</ul>
+
+<p>These technical components collectively enable the code to handle PDF uploads, process the documents, create vector representations, perform similarity searches, and provide question answering functionality.</p>
+
+</div>
 <hr>
 <h2>Results</h2>
 <div class="image-container">
