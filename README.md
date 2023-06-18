@@ -1,5 +1,8 @@
 <h1>LLM-Powered PDF Chatbot: Conversational Question Answering for Local Documents</h1>
 
+<p>
+  Welcome to LangChain-HuggingFace PDF Explorer, an innovative tool that empowers you to gain valuable insights from your PDF documents. Harnessing the power of Language Models (LLMs), this code enables you to extract meaningful information by simply uploading your PDF and asking questions.
+</p>
 <p>It is recommended to run the project in a virtual environment (venv) to avoid library clashes. This isolates Python packages for different projects, ensuring different versions of the same package can be used without conflicts. Running the project in a venv also prevents any project-specific packages from polluting your system Python installation.</p>
 
 <p>Make sure you have Python's <code>venv</code> package installed. If not, install it by running the following command:</p>
