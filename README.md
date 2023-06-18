@@ -49,3 +49,36 @@
 <p><strong>Note:</strong> Ensure you have an active internet connection as the application uses Hugging Face's API for language model inference.</p>
 
 <p>All the dependencies are listed in the <code>requirements.txt</code> file and will be installed during the setup process.</p>
+
+
+<hr>
+<h2>Results</h2>
+<div class="image-container">
+    <ol>
+        <li> <figure>
+            <figcaption>
+                Provided a 35-page ML theory tutorial PDF and tested over it.
+              </figcaption>
+          <br>
+            <img src="https://github.com/PavanSETTEM-003/Langchanin-PDF-Explorer/assets/88257205/79843a29-64a3-4e00-8aa3-29bc8bca5a82" ></figure></li>
+      <br>
+      <li><figure>
+            <figcaption>
+              Tested the TCS Transcript 4QFY23 PDF, which consisted of 24 pages.
+            </figcaption>
+          <br>
+          <img src="https://github.com/PavanSETTEM-003/Langchanin-PDF-Explorer/assets/88257205/19bd6f69-8cbf-40b8-8317-f227ce429a10">
+          </figure></li>
+    </ol>
+</div>
+
+<hr>
+<h2>Conclusion</h2>
+The code offers the capability to efficiently extract insights from local documents. It can be applied to various use cases, such as financial report analysis, educational PDF question assistance for students, and rapid knowledge extraction from research papers. Its versatility enables swift and targeted information retrieval from diverse document sources, empowering users to gain valuable insights effectively.It can be adapted and customized to suit different industries, domains, and specific requirements.
+
+<br>
+<br>
+
+
+
+Explore the code to meet your specific needs. We highly value your feedback as it enables us to continuously improve the functionality and usability of the code.
