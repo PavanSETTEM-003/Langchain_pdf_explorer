@@ -7,7 +7,7 @@
 
 <p>Make sure you have Python's <code>venv</code> package installed. If not, install it by running the following command:</p>
 
-<pre><code>pip install venv</code></pre>
+<pre><code>pip install virtualenv</code></pre>
 
 <h2>Setup and Run Instructions</h2>
 
@@ -30,13 +30,15 @@
 
   <pre><code>git clone https://github.com/PavanSETTEM-003/Langchain_pdf_explorer.git</code></pre>
 
-  <pre><code>cd Langchanin-PDF-Explorer</code></pre>
+  <pre><code>cd Langchain_pdf_explorer </code></pre>
 
   <li>Install the required dependencies:</li>
 
   <pre><code>pip install -r requirements.txt</code></pre>
 
-  <li>Open the <code>app.py</code> file and add your Hugging Face access key:</li>
+  <li>Open the <code>app.py</code> file and add your Hugging Face access key in line <b>number 12</b><br>To obtain your access
+    key, go to the following url <a href="https://huggingface.co/settings/tokens">Hugging face Access Tokens</a> Copy
+    the access key from that page.</li>
 
   <pre><code>os.environ["HUGGINGFACEHUB_API_TOKEN"] = "&lt;your-access-key&gt;"</code></pre>
 
@@ -96,25 +98,25 @@
 
 </div>
 <hr>
-<h2>Results</h2>
-<div class="image-container">
-    <ol>
-        <li> <figure>
-            <figcaption>
-                Provided a 35-page ML theory tutorial PDF and tested over it.
-              </figcaption>
-          <br>
-            <img src="https://github.com/PavanSETTEM-003/Langchanin-PDF-Explorer/assets/88257205/79843a29-64a3-4e00-8aa3-29bc8bca5a82" ></figure></li>
-      <br>
-      <li><figure>
-            <figcaption>
-              Tested the TCS Transcript 4QFY23 PDF, which consisted of 24 pages.
-            </figcaption>
-          <br>
-          <img src="https://github.com/PavanSETTEM-003/Langchanin-PDF-Explorer/assets/88257205/19bd6f69-8cbf-40b8-8317-f227ce429a10">
-          </figure></li>
-    </ol>
+
+<h2>Code execution snippets</h2>
+
+<div style="display: flex;">
+  <p>Provided a 35-page ML theory tutorial PDF and tested over it.</p>
+    <img src="https://github.com/PavanSETTEM-003/Langchain_pdf_explorer/assets/88257205/d012d221-4778-4b6e-a908-9e730efff704" alt="Screenshot 1" style="width: 50%;">
+  <p>Tested the TCS Transcript 4QFY23 PDF, which consisted of 24 pages.
+</p>
+    <img src="https://github.com/PavanSETTEM-003/Langchain_pdf_explorer/assets/88257205/fdd56388-54d0-47b5-a824-7c34ec9da352" alt="Screenshot 2" style="width: 50%;">
 </div>
+
+<h3>Sample working video</h3>
+
+
+https://github.com/PavanSETTEM-003/Langchain_pdf_explorer/assets/88257205/86092028-51ce-4aa4-9f3e-75d72fb32ba5
+
+
+
+
 
 <hr>
 <h2>Conclusion</h2>
